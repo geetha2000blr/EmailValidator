@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,600&family=Poppins:wght@300;400;500&family=Roboto:wght@400;700&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+nav{
+   background-color: black;
+   color: white;
+   padding: 15px 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+ul{
+   display: flex;
+}
+ul li{
+   list-style: none;
+   padding: 0 13px;
+   font-size: 12px;
+}
+ul li a{
+   color: white;
+   text-decoration: none;
+}
+ul>li>a:hover{
+   color: rgb(147, 156, 197);
+}
+.logo img{
+    width: 15px;
+    filter: invert(1);
+}
+main{
+  margin-top: 15px;
+  min-height: 90vh;
+}
+input[type=text]{
+  min-width: 23vw;
+  border: 2px solid black;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 3px 12px;
+}
+.container{
+   max-width: 80vw;
+   margin: auto;
+   padding:15px;
+}
+.conatiner h1{
+  padding: 12px 0;
+}
+.btn{
+  background-color: black;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#resultCont div::first-letter{
+  text-transform: uppercase;
+}
+footer{
+   background-color: black;
+   color: white;
+   padding: 10px;
+   font-size: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+@media only screen and (max-width:600px) {
+  .container{
+     font-size: 12px;
+  }
+  input[type='text'] {
+     width: 100%; 
+ }
+  nav{
+     flex-direction: column;
+  }
+  ul {
+     margin-top: 10px;
+  }
+  .logo{
+    padding: 6px 0;
+    font-size: 12px;
+}
+.logo span{
+    font-size: 20px;
+}
+.logo img{
+    width: 15px;
+    filter: invert(1);
+}
+}
